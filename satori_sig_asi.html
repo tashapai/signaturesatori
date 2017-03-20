@@ -14,7 +14,7 @@
           <tr border="0" cellpadding="0" cellspacing="0">
             <td border="0" cellpadding="0" cellspacing="0" valign="top" style="vertical-align:top;padding-bottom:1px;">
               <span style="color:#487fa8;font-size:11px;text-transform:uppercase;font-family:'arial' , 'helvetica' , sans-serif">{jobtitle}</span><br>
-              <span style="color:#487fa8;font-size:11px;text-transform:uppercase;font-family:'arial' , 'helvetica' , sans-serif;">{customField1} | Paramount Apparel</span>
+              <span style="color:#487fa8;font-size:11px;text-transform:uppercase;font-family:'arial' , 'helvetica' , sans-serif;">{if not empty(customField1)}{customField1} | {/if}Paramount Apparel</span>
             </td>
           </tr>
           <tr border="0" cellpadding="0" cellspacing="0" style="line-height:1.2;">
@@ -22,23 +22,20 @@
               <span style="display:inline-block;">
                 <span style="display:inline-block;width:12px;"><strong style="color:#487fa8;font-size:11px;font-family:'arial' , 'helvetica' , sans-serif;font-weight:bold;" width="12">E</strong></span>
                 <span style="color:#474747;font-size:12px;font-family:'arial' , 'helvetica' , sans-serif;padding-right:6px"><a href="mailto:{email}" rel="nofollow" style="color:#474747;font-size:11px;font-family:'arial' , 'helvetica' , sans-serif;text-decoration:none">{email}</a></span>
-              </span>
-              {if not empty(mobile)}<br>
+              </span><br>
+              {if not empty(customField2)}
               <span style="display:inline-block;">
                 <span style="display:inline-block;width:12px;"><strong style="color:#487fa8;font-size:11px;font-family:'arial' , 'helvetica' , sans-serif;font-weight:bold;" width="12">O</strong></span>
-                <span style="color:#474747;font-size:11px;font-family:'arial' , 'helvetica' , sans-serif"><a href="tel:{companyPhone}" rel="nofollow" style="color:#474747;font-size:11px;font-family:'arial' , 'helvetica' , sans-serif;text-decoration:none">866.274.4287 {customField2}</a></span>
+                <span style="color:#474747;font-size:11px;font-family:'arial' , 'helvetica' , sans-serif"><a href="tel:866.274.4287" rel="nofollow" style="color:#474747;font-size:11px;font-family:'arial' , 'helvetica' , sans-serif;text-decoration:none">866.274.4287 {customField2}</a></span>
               </span>&nbsp;&nbsp;
+              {/if}
+              {if not empty (mobile)}
               <span style="display:inline-block;">
                 <span style="display:inline-block;width:12px;"><strong style="color:#487fa8;font-size:11px;font-family:'arial' , 'helvetica' , sans-serif;font-weight:bold;" width="12">M</strong></span>
                 <span style="color:#474747;font-size:11px;font-family:'arial' , 'helvetica' , sans-serif"><a href="tel:{mobile}" rel="nofollow" style="color:#474747;font-size:11px;font-family:'arial' , 'helvetica' , sans-serif;text-decoration:none">{mobile}</a></span>
-              </span>
-              {else}<br>
-              <span style="display:inline-block;">
-                <span style="display:inline-block;width:12px;"><strong style="color:#487fa8;font-size:11px;font-family:'arial' , 'helvetica' , sans-serif;font-weight:bold;" width="12">O</strong></span>
-                <span style="color:#474747;font-size:11px;font-family:'arial' , 'helvetica' , sans-serif"><a href="tel:{companyPhone}" rel="nofollow" style="color:#474747;font-size:11px;font-family:'arial' , 'helvetica' , sans-serif;text-decoration:none">{companyPhone} {customField2}</a></span>
-              </span>
+              </span>&nbsp;&nbsp;
               {/if}
-              {if not empty(customField3)}&nbsp;&nbsp;
+              {if not empty(customField3)}
               <span style="display:inline-block;">
                 <span style="display:inline-block;width:12px;"><strong style="color:#487fa8;font-size:11px;font-family:'arial' , 'helvetica' , sans-serif;font-weight:bold;" width="12">F</strong></span>
                 <span style="color:#474747;font-size:11px;font-family:'arial' , 'helvetica' , sans-serif"><a href="tel:{companyPhone}" rel="nofollow" style="color:#474747;font-size:11px;font-family:'arial' , 'helvetica' , sans-serif;text-decoration:none">{customField3}</a></span>
