@@ -12,9 +12,10 @@
             </td>
           </tr>
           <tr border="0" cellpadding="0" cellspacing="0">
-            <td border="0" cellpadding="0" cellspacing="0" valign="top" style="vertical-align:top;padding-bottom:1px;">
-              <span style="color:#487fa8;font-size:11px;text-transform:uppercase;font-family:'arial' , 'helvetica' , sans-serif">{jobtitle}</span><br>
-              <span style="color:#487fa8;font-size:11px;text-transform:uppercase;font-family:'arial' , 'helvetica' , sans-serif;">{if not empty(customField1)}{customField1} | {/if}Paramount Apparel</span>
+            <td border="0" cellpadding="0" cellspacing="0" valign="top" style="vertical-align:top;padding-bottom:1px;color:#487fa8;font-size:11px;text-transform:uppercase;font-family:'arial' , 'helvetica' , sans-serif">
+              {if not empty(jobtitle)}<span style="color:#487fa8;font-size:11px;text-transform:uppercase;font-family:'arial' , 'helvetica' , sans-serif">{jobtitle}</span>{/if}
+              {if not empty(customField1)}<br>
+              <span style="color:#487fa8;font-size:11px;text-transform:uppercase;font-family:'arial' , 'helvetica' , sans-serif;">{customField1} | Paramount Apparel</span>{/if}
             </td>
           </tr>
           <tr border="0" cellpadding="0" cellspacing="0" style="line-height:1.2;">
