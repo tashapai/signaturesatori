@@ -24,22 +24,19 @@
                 <span style="display:inline-block;width:12px;"><strong style="color:#72984d;font-size:11px;font-family:'arial' , 'helvetica' , sans-serif;font-weight:bold;" width="12">E</strong></span>
                 <span style="color:#474747;font-size:12px;font-family:'arial' , 'helvetica' , sans-serif;padding-right:6px"><a href="mailto:{email}" rel="nofollow" style="color:#474747;font-size:11px;font-family:'arial' , 'helvetica' , sans-serif;text-decoration:none">{email}</a></span>
               </span>
-              {if not empty(mobile)}<br>
+              {if not empty(customField2)}<br>
               <span style="display:inline-block;">
                 <span style="display:inline-block;width:12px;"><strong style="color:#72984d;font-size:11px;font-family:'arial' , 'helvetica' , sans-serif;font-weight:bold;" width="12">O</strong></span>
-                <span style="color:#474747;font-size:11px;font-family:'arial' , 'helvetica' , sans-serif"><a href="tel:{companyPhone}" rel="nofollow" style="color:#474747;font-size:11px;font-family:'arial' , 'helvetica' , sans-serif;text-decoration:none">{companyPhone} {customField2}</a></span>
+                <span style="color:#474747;font-size:11px;font-family:'arial' , 'helvetica' , sans-serif"><a href="tel:{companyPhone}" rel="nofollow" style="color:#474747;font-size:11px;font-family:'arial' , 'helvetica' , sans-serif;text-decoration:none">573.468.2730 {customField2}</a></span>
               </span>&nbsp;&nbsp;
+              {/if}
+              {if not empty(mobile)}
               <span style="display:inline-block;">
                 <span style="display:inline-block;width:12px;"><strong style="color:#72984d;font-size:11px;font-family:'arial' , 'helvetica' , sans-serif;font-weight:bold;" width="12">M</strong></span>
-                <span style="color:#474747;font-size:11px;font-family:'arial' , 'helvetica' , sans-serif"><a href="tel:{mobile}" rel="nofollow" style="color:#474747;font-size:11px;font-family:'arial' , 'helvetica' , sans-serif;text-decoration:none">{mobile}</a></span>
-              </span>
-              {else}<br>
-              <span style="display:inline-block;">
-                <span style="display:inline-block;width:12px;"><strong style="color:#72984d;font-size:11px;font-family:'arial' , 'helvetica' , sans-serif;font-weight:bold;" width="12">O</strong></span>
-                <span style="color:#474747;font-size:11px;font-family:'arial' , 'helvetica' , sans-serif"><a href="tel:{companyPhone}" rel="nofollow" style="color:#474747;font-size:11px;font-family:'arial' , 'helvetica' , sans-serif;text-decoration:none">{companyPhone} {customField2}</a></span>
+                <span style="color:#474747;font-size:11px;font-family:'arial' , 'helvetica' , sans-serif"><a href="tel:{mobile}" rel="nofollow" style="color:#474747;font-size:11px;font-family:'arial' , 'helvetica' , sans-serif;text-decoration:none">{mobile}</a></span>&nbsp;&nbsp;
               </span>
               {/if}
-              {if not empty(customField3)}&nbsp;&nbsp;
+              {if not empty(customField3)}
               <span style="display:inline-block;">
                 <span style="display:inline-block;width:12px;"><strong style="color:#72984d;font-size:11px;font-family:'arial' , 'helvetica' , sans-serif;font-weight:bold;" width="12">F</strong></span>
                 <span style="color:#474747;font-size:11px;font-family:'arial' , 'helvetica' , sans-serif"><a href="tel:{companyPhone}" rel="nofollow" style="color:#474747;font-size:11px;font-family:'arial' , 'helvetica' , sans-serif;text-decoration:none">{customField3}</a></span>
@@ -47,7 +44,7 @@
               {/if}
               <br>
               <span style="display:inline-block;width:12px;"><strong style="color:#72984d;font-size:11px;font-family:'arial' , 'helvetica' , sans-serif;font-weight:bold;" width="12">A</strong></span>
-              <span style="color:#474747;font-size:11px;font-family:'arial' , 'helvetica' , sans-serif">{companyAddress}</span>
+              <span style="color:#474747;font-size:11px;font-family:'arial' , 'helvetica' , sans-serif">1500 Independence Dr, Sullivan, MO 63080</span>
 
             </td>
           </tr>
