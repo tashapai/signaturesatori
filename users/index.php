@@ -1,13 +1,18 @@
+<html>
+<head>
+</head>
+<body>
 <?php 
-if ($handle = opendir('.')) {
-
-    while (false !== ($entry = readdir($handle))) {
-
-        if ($entry != "." && $entry != "..") {
-
-            echo "<a href="$entry">$entry</a><br>";
-        }
-    }
-
-    closedir($handle);
-}
+$count = 0; 
+if ($handle = opendir('.')) { 
+    while (false !== ($file = readdir($handle))) { 
+        if ($file != "." && $file != "..") {$count++; 
+            print("<a href=\"".$file."\">".$file."</a><br />\n"); 
+        } 
+    } 
+echo '<br /><br /><a href="..">Return</a>'; 
+    closedir($handle); 
+} 
+?>
+</body>
+</html>
