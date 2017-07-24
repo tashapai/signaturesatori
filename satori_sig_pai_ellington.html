@@ -24,7 +24,14 @@
                 <span style="display:inline-block;width:12px;"><strong style="color:#72984d;font-size:11px;font-family:'arial' , 'helvetica' , sans-serif;font-weight:bold;" width="12">E</strong></span>
                 <span style="color:#474747;font-size:12px;font-family:'arial' , 'helvetica' , sans-serif;padding-right:6px"><a href="mailto:{email}" rel="nofollow" style="color:#474747;font-size:11px;font-family:'arial' , 'helvetica' , sans-serif;text-decoration:none">{email}</a></span>
               </span>
-              <br>{if not empty(customField2)}
+              <br>
+              {if not empty(customField4)}
+              <span style="display:inline-block;">
+                <span style="display:inline-block;width:12px;"><strong style="color:#72984d;font-size:11px;font-family:'arial' , 'helvetica' , sans-serif;font-weight:bold;" width="12">D</strong></span>
+                <span style="color:#474747;font-size:11px;font-family:'arial' , 'helvetica' , sans-serif"><a href="tel:{companyPhone}" rel="nofollow" style="color:#474747;font-size:11px;font-family:'arial' , 'helvetica' , sans-serif;text-decoration:none">{customField4}</a></span>
+              </span>&nbsp;&nbsp;
+              {/if}
+              {if not empty(customField2)}
               <span style="display:inline-block;">
                 <span style="display:inline-block;width:12px;"><strong style="color:#72984d;font-size:11px;font-family:'arial' , 'helvetica' , sans-serif;font-weight:bold;" width="12">O</strong></span>
                 <span style="color:#474747;font-size:11px;font-family:'arial' , 'helvetica' , sans-serif"><a href="tel:573.663.3988" rel="nofollow" style="color:#474747;font-size:11px;font-family:'arial' , 'helvetica' , sans-serif;text-decoration:none">573.663.3988 {customField2}</a></span>
